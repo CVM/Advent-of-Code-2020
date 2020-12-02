@@ -1,4 +1,4 @@
-data = open("budget", "r")
+data = open("input", "r")
 budget = data.read().rstrip().split("\n")
 for i in budget:
   for j in budget:

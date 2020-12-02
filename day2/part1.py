@@ -7,7 +7,7 @@ def checkPassword(password,letter,min,max):
             instances = instances+1
     return min <= instances <= max
 
-data = open("passwords", "r")
+data = open("input", "r")
 passwords = [re.match("^(?P<min>\d+)-(?P<max>\d+) (?P<letter>[a-z]): (?P<password>.*)",x).groupdict() for x in data.readlines()]
 
 validPasswords = 0
