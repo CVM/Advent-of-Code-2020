@@ -5,7 +5,7 @@ boardingPasses = re.sub('F|L','0',re.sub(r'B|R','1',data.read().rstrip())).split
 seats = []
 
 for boardingPass in boardingPasses:
-    seats.append(int(boardingPass[0:7],2) * 8 + int(boardingPass[7:10],2))
+    seats.append(int(boardingPass,2))
 
 seats.sort()
 
